@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-  <title>DevOps Demo</title>
+  <meta charset="UTF-8">
+  <title>DevOps Demo - GitHub Actions</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Hello DevOps!</h1>
-  <p>Este site foi atualizado automaticamente.</p>
-  <p id="time"></p>
+
+  <header>
+    <h1> DevOps com GitHub Actions</h1>
+    <p>Automatização de tarefas no desenvolvimento moderno</p>
+  </header>
+
+  <section class="card">
+    <h2> O que é isto?</h2>
+    <p>
+      Este site é atualizado automaticamente sempre que há mudanças no código.
+      Isso é possível graças ao GitHub Actions.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2> O que acontece?</h2>
+    <ul>
+      <li>Fazemos push no código</li>
+      <li>O GitHub Actions executa um workflow</li>
+      <li>O site é publicado automaticamente</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Última atualização</h2>
+    <p id="time"></p>
+  </section>
+
+  <section class="card highlight">
+    <h2> Por que isso é importante?</h2>
+    <p>
+      Automatizar processos reduz erros, poupa tempo e melhora a produtividade das equipas.
+    </p>
+  </section>
+
+  <footer>
+    <p>Feito com amor usando GitHub Actions</p>
+  </footer>
 
   <script>
     document.getElementById("time").innerText =
-      "Última atualização: " + new Date().toLocaleString();
+      new Date().toLocaleString();
   </script>
+
 </body>
 </html>
